@@ -13,7 +13,7 @@
   "Minhas 3 séries favoritas são: SÉRIE_01, SÉRIE_02 e SÉRIE_03."
 */
 const my3FavoriteTVShows = ['Vingadores Ultimato', 'Batman Cavaleiro das trevas', 'Avatar'];
-const sentence = (`Minhas 3 séries favoritas são: ${my3FavoriteTVShows.slice(0,19)}, SÉRIE_02 e SÉRIE_03.`)
+const sentence = "Minhas 3 séries favoritas são: " + my3FavoriteTVShows[0] + ", " + my3FavoriteTVShows[1] + " e " + my3FavoriteTVShows[2] + ".";
 console.log(sentence)
 /*
   02 - Comente o console.log() acima e:
@@ -49,9 +49,8 @@ console.log(`A série ${randomTVShow}, está presente no array? ${my3FavoriteTVS
 
   "O tipo de dado que a const "isRandomTVShowIncluded" armazena é: TIPO_DE_DADO."
 */
-const typeSentence = ('O tipo de dado que a const \"isRandomTVShowIncluded"\ armazena é: TIPO_DE_DADO.')
-
-
+const typeSentence = 'O tipo de dado que a const \"isRandomTVShowIncluded"\ armazena é: ' +typeof isRandomTVShowIncluded
+console.log(typeSentence)
 /*
   05 - Comente o console.log() acima e:
 
@@ -66,7 +65,9 @@ const typeSentence = ('O tipo de dado que a const \"isRandomTVShowIncluded"\ arm
   caracteres? BOOLEAN."
 */
 let numChar = 39;
-
+let BooleanValue = false
+let booleanString = BooleanValue ? "True" : "False";
+console.log(`A string que a \"typeSentence"\ armazena tem mais de ${numChar} caracteres? ${booleanString}.`);
 
 
 /*
@@ -80,7 +81,7 @@ let numChar = 39;
 */
 
 const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
-
+console.log (`Todos os ${falsyValues.length} itens do array "falsyValues" são falsy. Inclusive o ${isValueFalsy = false}.`)
 /*
   07 - Comente o console.log() acima e:
 

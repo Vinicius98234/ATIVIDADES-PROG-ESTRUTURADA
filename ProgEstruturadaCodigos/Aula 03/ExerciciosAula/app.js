@@ -21,8 +21,10 @@ let brazilianFoods = []
 
 - Exiba a brazilianFoods no console.
 */
-let morebrazilianFoods=brazilianFoods.concat('Coxinha', null, 'Brigadeiro')
-console.log (morebrazilianFoods)
+brazilianFoods.push("Coxinha")
+brazilianFoods.push(null)
+brazilianFoods.push("Brigadeiro")
+console.log (brazilianFoods)
 
 /*
 04 - Comente o console.log acima e:
@@ -31,7 +33,7 @@ console.log (morebrazilianFoods)
 array "brazilianFoods" (null) seja substituído por "Pão de Queijo";
 - Exiba apenas o 2º item desse array no console.
 */
-const popFood= brazilianFoods.splice(1, 1,'Pão de Queijo')
+brazilianFoods[1] = "Pão de Queijo";
 console.log(brazilianFoods)
 
 
@@ -47,9 +49,9 @@ número diretamente;
 mas sem digitar os nomes das comidas diretamente;
 - Exiba a foodsInfo no console.
 */
-const foodsInfo = (`Até aqui, o  array "brazilianFoods" possui NUMERO_DE_ITENS itens: NOME_DO_ITEM_1, NOME_DO_ITEM_2 e NOME_DO_ITEM_3.`);
-console.log(foodsInfo.indexOf('array'))
-console.log(`${foodsInfo.slice(0), foodsInfo.indexOf('NUMERO-DE-ITENS')}${brazilianFoods.length} itens: ${brazilianFoods.toString()}.`)
+const numItems = brazilianFoods.length;
+const foodsInfo = `Até aqui, o array "brazilianFoods" possui ${numItems} itens: ${brazilianFoods[0]}, ${brazilianFoods[1]} e ${brazilianFoods[2]}.`;
+console.log(foodsInfo)
 /*
 06 - Comente o console.log acima e:
 
@@ -88,9 +90,9 @@ você acabou de escrever, remova o último item do array "dogNames"
 utilizando o método adequado para isso;
 - O console deve continuar exibin do o ultimo item do array , que agora é "Liilica"
 */
-console.log(dogNames[dogNames.length-1])
-dogNames.pop(dognames [dognames.length-1])
-console.log(dogNames[dogname.lenght-1])
+console.log(dogNames[dogNames.length -1])
+dogNames.pop(dogNames[dogNames.length -1])
+console.log(dogNames[dogNames.lenght -1])
 /*
 
 09 - Comente o console.log acima e:
@@ -132,7 +134,7 @@ constante que você criou.
 
 'A SOBREMESA é um doce à base de coco, tradicional na América Latina e em Angola.'
 */
-const dessert = (`${dogname[0].slice(-2) + dogNames[1].slice(2) + dogNames[3].slice(-2)}`)
+const dessert = (`${dogNames[0].slice(-2) + dogNames[1].slice(2) + dogNames[3].slice(-2)}`)
 console.log (dessert)
 console.log (dessert.replace ('n', 'd'))
 console.log (`A ${dessert.replace('n','d')} é um doce à base de coco,tradicional na América Latina`)
