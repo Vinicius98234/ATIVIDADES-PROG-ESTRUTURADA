@@ -90,7 +90,9 @@ console.log (`Todos os ${falsyValues.length} itens do array "falsyValues" são f
     em boolean.
   - Você sabe por que essa conversão resultou em true?
 */
-
+const crazyOperation = null + 1;
+const crazyConversion = Boolean(crazyOperation)
+// o 1 é considerado como true em js
 
 
 /*
@@ -105,7 +107,9 @@ console.log (`Todos os ${falsyValues.length} itens do array "falsyValues" são f
   "A soma entre o 1º e o 3º item de "ages" é menor ou igual a 92. Essa afirmação  
   é: BOOLEAN."
 */
-
+const ages = [31, 82, 61, 11]
+const agesSum = ages[0] + ages[2] <= 92;
+console.log (`A soma entre o 1º e o 3º item de \"ages"\ é menor ou igual a 92. Essa afirmação  é: ${agesSum}.`)
 
 
 /*
@@ -116,7 +120,8 @@ console.log (`Todos os ${falsyValues.length} itens do array "falsyValues" são f
   - Essa expressão deve resultar em false.
   - Exiba a "isNotAString" no console.
 */
-
+const isNotAString = typeof randomTVShow !== "string";
+console.log(isNotAString)
 
 
 /*
@@ -128,3 +133,4 @@ console.log (`Todos os ${falsyValues.length} itens do array "falsyValues" são f
 */
 
 const evenNumbers = [0, 2, 4, 6, 8, 10]
+console.log (evenNumbers.indexOf(8) !== -1);
